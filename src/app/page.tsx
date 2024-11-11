@@ -31,7 +31,7 @@ export default function Home() {
                     }}></script>
             </head>
             <div
-                className="bg-[#1a1a2e] text-white min-h-screen"
+                className="bg-white text-black min-h-screen"
                 style={montserrat.style}>
                 <HeaderSection
                     isMenuOpen={isMenuOpen}
