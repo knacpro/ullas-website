@@ -61,30 +61,63 @@ export function HeaderSection({ isMenuOpen, toggleMenu }: HeaderSectionPropType)
 
                 {/* Nav Links with Dropdown */}
                 <nav
-                    className={`${isMenuOpen ? "block" : "hidden"
-                        } sm:flex transition-all duration-300 ease-in-out`}>
+                    className={`${
+                        isMenuOpen ? "block" : "hidden"
+                    } sm:flex transition-all duration-300 ease-in-out`}>
                     <ul className="flex flex-col items-center space-y-4 py-4 sm:flex-row sm:space-y-0 sm:space-x-6 sm:pt-1">
                         <DropdownItem
                             title="About Us"
                             links={[
-                                { name: "Overview", href: "/overview" },
-                                { name: "Vision & Mission", href: "/mission" },
-                                { name: "Founder's Message", href: "/founder" },
-                                { name: "Guest's Opine", href: "/guest-opine" }
+                                { name: "Overview", href: "/about/overview" },
+                                {
+                                    name: "Vision & Mission",
+                                    href: "/about/mission"
+                                },
+                                {
+                                    name: "Founder's Message",
+                                    href: "/about/founder"
+                                },
+                                {
+                                    name: "Guest's Opine",
+                                    href: "/about/guest-opine"
+                                }
                             ]}
                         />
                         <DropdownItem
                             title="Academics"
                             links={[
-                                { name: "Programs", href: "/academics/programs" },
+                                {
+                                    name: "Programs",
+                                    href: "/academics/programs"
+                                },
                                 { name: "Faculty", href: "/academics/faculty" },
-                                { name: "Admissions", href: "/academics/admissions" }
+                                {
+                                    name: "Admissions",
+                                    href: "/academics/admissions"
+                                }
                             ]}
                         />
 
-
-                        <DropdownItem title="Facilities" links={[{ name: "Library", href: "/facilities/library" }, { name: "Labs", href: "/facilities/labs" }]} />
-                        <DropdownItem title="Activities" links={[{ name: "Sports", href: "/activities/sports" }, { name: "Art & Culture", href: "/activities/art" }]} />
+                        <DropdownItem
+                            title="Facilities"
+                            links={[
+                                {
+                                    name: "Library",
+                                    href: "/facilities/library"
+                                },
+                                { name: "Labs", href: "/facilities/labs" }
+                            ]}
+                        />
+                        <DropdownItem
+                            title="Activities"
+                            links={[
+                                { name: "Sports", href: "/activities/sports" },
+                                {
+                                    name: "Art & Culture",
+                                    href: "/activities/art"
+                                }
+                            ]}
+                        />
                         <li>
                             <Link
                                 href="/gallery"
