@@ -64,32 +64,19 @@ export function HeaderSection({ isMenuOpen, toggleMenu }: HeaderSectionPropType)
                     className={`${isMenuOpen ? "block" : "hidden"
                         } sm:flex transition-all duration-300 ease-in-out`}>
                     <ul className="flex flex-col items-center space-y-4 py-4 sm:flex-row sm:space-y-0 sm:space-x-6 sm:pt-1">
-                        <li>
-                            <Link
-                                href="/"
-                                onClick={toggleMenu}
-                                className="text-sm sm:text-base text-black hover:text-gray-300 transition-colors">
-
-                                Home
-                            </Link>
-                        </li>
                         <DropdownItem
                             title="About Us"
                             links={[
-                                { name: "Overview", href: "/about/overview" },
-                                { name: "Vision & Mission", href: "/about/mission" },
-                                { name: "Committee Members", href: "/about/committee" },
-                                { name: "Founder's Message", href: "/about/founder" },
-                                { name: "President's Message", href: "/about/president" },
-                                { name: "Principal's Message", href: "/about/principal" },
-                                { name: "Guest's Opine", href: "/about/guest-opine" }
+                                { name: "Overview", href: "/overview" },
+                                { name: "Vision & Mission", href: "/mission" },
+                                { name: "Founder's Message", href: "/founder" },
+                                { name: "Guest's Opine", href: "/guest-opine" }
                             ]}
                         />
                         <DropdownItem
                             title="Academics"
                             links={[
                                 { name: "Programs", href: "/academics/programs" },
-                                { name: "Curriculum", href: "/academics/curriculum" },
                                 { name: "Faculty", href: "/academics/faculty" },
                                 { name: "Admissions", href: "/academics/admissions" }
                             ]}
@@ -128,21 +115,30 @@ export function HeaderSection({ isMenuOpen, toggleMenu }: HeaderSectionPropType)
     );
 }
 
-function DropdownItem({ title, links }: { title: string; links: { name: string; href: string }[] }) {
+function DropdownItem({
+    title,
+    links
+}: {
+    title: string;
+    links: { name: string; href: string }[];
+}) {
     const [open, setOpen] = useState(false);
+
     return (
-        <div className="relative">
+        <div
+            className="relative">
             <button
                 onClick={() => setOpen(!open)}
-                onBlur={() => setOpen(false)}
                 className="text-sm sm:text-base text-black hover:text-gray-300 transition-colors font-semibold focus:outline-none">
                 {title} <span className="ml-1">&#9662;</span>
             </button>
             {open && (
                 <ul className="absolute left-0 w-40 bg-white shadow-lg rounded-md mt-2 py-2">
-                    {links.map((link) => (
+                    {links.map(link => (
                         <li key={link.name}>
-                            <Link href={link.href} className="block px-4 py-2 text-sm text-black hover:bg-gray-200">
+                            <Link
+                                href={link.href}
+                                className="block px-4 py-2 text-sm text-black hover:bg-gray-200">
                                 {link.name}
                             </Link>
                         </li>
@@ -152,3 +148,4 @@ function DropdownItem({ title, links }: { title: string; links: { name: string; 
         </div>
     );
 }
+
