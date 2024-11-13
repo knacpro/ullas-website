@@ -70,39 +70,44 @@ export function HeaderSection({
                             title="About Us"
                             route="/about"
                             links={[
-                                { name: "Overview", hash: "#overview" },
-                                { name: "Vision & Mission", hash: "#mission" },
-                                { name: "Founder's Message", hash: "#founder" },
-                                { name: "Guest's Opine", hash: "#guest-opine" }
+                                { name: "Overview", hash: "about" },
+                                { name: "Vision & Mission", hash: "mission" },
+                                { name: "Founder's Message", hash: "founder" },
+                                { name: "Guest's Opine", hash: "guest-opine" }
                             ]}
                         />
                         <DropdownItem
                             title="Academics"
                             route="/academics"
                             links={[
-                               
-                                { name: "Faculty", hash: "#faculty" },
-                                { name: "Prescribed books", hash: "#prescribedbooks" },
-                                { name: "Programs", hash: "#programs" },
-                                { name: "Admissions", hash: "#admissions" },
-                                { name: "Academic Calender", hash: "#academic-calender" },
-                                { name: "Holiday List", hash: "#holiday-list" }
+                                { name: "Faculty", hash: "academics" },
+                                {
+                                    name: "Prescribed books",
+                                    hash: "prescribedbooks"
+                                },
+                                { name: "Programs", hash: "programs" },
+                                { name: "Admissions", hash: "admissions" },
+                                {
+                                    name: "Academic Calender",
+                                    hash: "academic-calender"
+                                },
+                                { name: "Holiday List", hash: "holiday-list" }
                             ]}
                         />
-                        <DropdownItem
-                            title="Facilities"
-                            route="/facilities"
-                            links={[
-                                { name: "facilities", hash: "#library" },
-
-                            ]}
-                        />
+                        <li>
+                            <Link
+                                href="/facilities"
+                                onClick={toggleMenu}
+                                className="text-sm sm:text-base text-black hover:text-gray-300 transition-colors font-semibold focus:outline-none">
+                                Facilities
+                            </Link>
+                        </li>
                         <DropdownItem
                             title="Activities"
                             route="/activities"
                             links={[
-                                { name: "Sports", hash: "#sports" },
-                                { name: "Art & Culture", hash: "#art" }
+                                { name: "Sports", hash: "activities" },
+                                { name: "Art & Culture", hash: "art" }
                             ]}
                         />
                         <li>
@@ -158,11 +163,11 @@ function DropdownItem({
                 <ul className="absolute left-0 w-40 bg-white shadow-lg rounded-md mt-2 py-2">
                     {links.map(link => (
                         <li key={link.name}>
-                            <a
-                                href={`${route}${link.hash}`}
+                            <Link
+                                href={`${link.hash}`}
                                 className="block px-4 py-2 text-sm text-black hover:bg-gray-200">
                                 {link.name}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -208,4 +213,3 @@ export function MainContent() {
         </div>
     );
 }
-
