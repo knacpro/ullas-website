@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from "next/link";
@@ -161,7 +160,6 @@ function DropdownItem({
                         <li key={link.name}>
                             <a
                                 href={`${route}${link.hash}`}
-                                scroll={false}
                                 className="block px-4 py-2 text-sm text-black hover:bg-gray-200">
                                 {link.name}
                             </a>
