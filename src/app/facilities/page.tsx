@@ -30,12 +30,12 @@ export default function Facilities() {
     {
       title: "Computer Lab",
       image: "/assets/computer labs.jpg",
-      description: "Sanskaar school provides state-of-the-art computer knowledge with an advanced & fully equipped computer lab."
+      description: "Ullas school provides state-of-the-art computer knowledge with an advanced & fully equipped computer lab."
     },
     {
       title: "Sports",
       image: "/assets/sports.jpg",
-      description: "Sanskaar believes in overall development of students, and sports is given importance."
+      description: "Ullas believes in overall development of students, and sports is given importance."
     },
     {
       title: "RO Water Plant",

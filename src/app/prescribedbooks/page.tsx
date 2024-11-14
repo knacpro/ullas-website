@@ -15,7 +15,7 @@ export default function prescribedbooks() {
 
             {/* Prescribed Books Section */}
             <div id="prescribedbooks">
-                <div className="py-10 px-4 sm:px-10 lg:px-20 bg-white mt-10">
+                <div className="py-10 px-4 sm:px-10 lg:px-20 bg-white pt-40">
                     <h3 className="text-2xl md:text-3xl font-semibold text-center">
                         Prescribed Books
                     </h3>
