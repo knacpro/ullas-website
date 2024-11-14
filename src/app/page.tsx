@@ -1,9 +1,17 @@
 "use client";
 
+import { AdmissionPage } from "@/components/features/hero-section/admission-page";
+import { CurriculumOverview } from "@/components/features/hero-section/curriculum-overview";
+import { FounderProfile } from "@/components/features/hero-section/founder-profile";
+import { GlimpsesOfProminence } from "@/components/features/hero-section/glimpses-of-prominence";
 import { HeroSection } from "@/components/features/hero-section/heropage";
+import { SchoolInfo } from "@/components/features/hero-section/school-info";
+import { SchoolPhotography } from "@/components/features/hero-section/school-photography";
+import { WhyChooseSection } from "@/components/features/hero-section/why-choose-section";
 import WhyChooseUs from "@/components/features/why-us/whyus";
 import FooterSection from "@/components/footer/footer";
 import { HeaderSection } from "@/components/header/header";
+import { ParentTestimonials } from "@/components/features/hero-section/parent-testimonials";
 import { Montserrat } from "next/font/google";
 import { useState } from "react";
 
@@ -38,7 +46,14 @@ export default function Home() {
                     toggleMenu={toggleMenu}
                 />
                 <HeroSection isMenuOpen={isMenuOpen} />
-                <WhyChooseUs />
+                <AdmissionPage />
+                <SchoolInfo />
+                <WhyChooseSection />
+                <FounderProfile />
+                <CurriculumOverview />
+                <GlimpsesOfProminence />
+                <SchoolPhotography />
+                <ParentTestimonials />
                 <FooterSection />
             </div>
         </>
