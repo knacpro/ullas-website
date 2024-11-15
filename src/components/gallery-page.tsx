@@ -1,15 +1,12 @@
-"use client"
+'use client'
+
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
-import FooterSection from '@/components/footer/footer';
-import { HeaderSection } from "@/components/header/header";
-import { useState } from "react";
 
-
-export default function Component() {
+export function GalleryPage() {
   const galleryImages = [
     {
-      src: "/placeholder.svg?height=400&width=800",
+      src: "/placeholder.svg?height=400&width=600",
       alt: "School entrance with students and parents"
     },
     {
@@ -58,18 +55,7 @@ export default function Component() {
     }
   ]
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-      const toggleMenu = () => {
-          setIsMenuOpen(!isMenuOpen);
-      };
-
   return (
-    <>
-    <HeaderSection
-                    isMenuOpen={isMenuOpen}
-                    toggleMenu={toggleMenu}
-                />
     <div className="min-h-screen bg-background">
       <div className="relative">
         <div className="absolute inset-0 bg-[#E6E6FA] h-48">
@@ -105,7 +91,5 @@ export default function Component() {
         </div>
       </div>
     </div>
-            <FooterSection />
-            </>
   )
 }
