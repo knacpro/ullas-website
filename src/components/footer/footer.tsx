@@ -32,13 +32,13 @@ export default function FooterSection() {
                         </div>
                         <div className="flex items-center hover:underline cursor-pointer">
                             <Link
-                                href="tel:+917676193045"
+                                href="tel:+919900741240"
                                 className="flex space-x-1">
                                 <Phone
                                     className="w-5 h-5 mr-2"
                                     aria-label="Phone"
                                 />
-                                <span>+91 7676193045</span>
+                                <span>+91 9900741240</span>
                             </Link>
                         </div>
                         <div className="flex items-start">

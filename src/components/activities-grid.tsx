@@ -1,6 +1,6 @@
 'use client'
 
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card4"
 import { GraduationCap, Users, BookOpen, School, Trophy, PartyPopper, Building } from 'lucide-react'
 
 export function ActivitiesGridComponent() {

@@ -1,7 +1,7 @@
 "use client"
 import { GraduationCap, Users, School, Brain, Trophy, PartyPopper, Building } from 'lucide-react'
 import ActivitiesComponent from "@/components/features/activities/activities";
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card4';
 import { HeaderSection } from '@/components/header/header';
 import { useState } from 'react';
 import FooterSection from '@/components/footer/footer';

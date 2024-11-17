@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button1"
 import { Facebook, Twitter } from 'lucide-react'
 
 export function AdmissionPage() {
