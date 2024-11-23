@@ -46,25 +46,25 @@ export function GlimpsesOfProminence() {
                       src: "/assets/girls.png",
                       title: "General Champions",
                       description:
-                          "Sanskaar won 3 General Champions in an academic year"
+                          "Ullas won 3 General Champions in an academic year"
                   },
                   {
                       src: "/assets/students-3.png",
                       title: "General Champions",
                       description:
-                          "Sanskaar won 3 General Champions in an academic year"
+                          "Ullas won 3 General Champions in an academic year"
                   },
                   {
                       src: "/assets/students-4.png",
                       title: "Swachh Vidyalaya Award",
                       description:
-                          "Sanskaar won District and State Swachh Vidyalaya Award"
+                          "Ullas won District and State Swachh Vidyalaya Award"
                   },
                   {
                       src: "/assets/students-7.png",
                       title: "Annual Gathering",
                       description:
-                          "Sanskaar Sandhya – Annual Gathering Special Welcome"
+                          "Ullas Sandhya – Annual Gathering Special Welcome"
                   },
                   {
                       src: "/assets/students-6.png",

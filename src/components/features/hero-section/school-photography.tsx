@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
-import { Button } from '@/components/ui/button1'
+import { Button } from '@/components/ui/button-1'
 import Link from 'next/link'
 
 const images = [

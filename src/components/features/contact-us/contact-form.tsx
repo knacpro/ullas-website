@@ -48,7 +48,7 @@
 //               </div>
 //               <div>
 //                 <h3 className="font-bold">SANSKAAR CBSE English Medium School</h3>
-//                 <p>Sanskaar Nagar, Keshwapur, Kusugal Road, Hubli – 23</p>
+//                 <p>Ullas Nagar, Keshwapur, Kusugal Road, Hubli – 23</p>
 //               </div>
 //             </div>
 //             <div className="space-y-2">
@@ -57,8 +57,8 @@
 //                 Email:
 //               </div>
 //               <div className="space-y-1">
-//                 <p>admin@sanskaarhubli.edu.in</p>
-//                 <p>office@sanskaarhubli.edu.in</p>
+//                 <p>admin@ullashubli.edu.in</p>
+//                 <p>office@ullashubli.edu.in</p>
 //               </div>
 //             </div>
 //             <div className="space-y-2">
@@ -66,7 +66,7 @@
 //                 <Mail className="h-5 w-5 text-[#5DD1D7]" />
 //                 For any grievances/complaints, reach us at:
 //               </div>
-//               <p>grievance@sanskaarhubli.edu.in</p>
+//               <p>grievance@ullashubli.edu.in</p>
 //             </div>
 //             <div className="space-y-2">
 //               <div className="flex items-center gap-2 font-semibold">

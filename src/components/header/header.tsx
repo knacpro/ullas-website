@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import Image from "next/image";
 import { useState, useEffect } from "react";
 config.autoAddCss = false;
 
@@ -23,13 +22,13 @@ export function HeaderSection({
             <header
                 className={`bg-[#fef0ef] fixed top-0 left-0 p-2 w-full z-50 sm:flex justify-between items-center`}>
                 <div className="pl-4 sm:pl-10 text-black flex space-x-4 items-center">
-                    <Image
+                    {/* <Image
                         src={"/assets/logo.png"}
                         width={400}
                         height={400}
                         alt={"logo"}
                         className="object-cover w-10 h-10 sm:w-20 sm:h-20"
-                    />
+                    /> */}
                     <div>
                         <h1 className="text-sm sm:text-2xl font-bold tracking-wider">
                             Ullas Nursery School
@@ -51,13 +50,6 @@ export function HeaderSection({
                             className="text-2xl"
                         />
                     </button>
-                    <Image
-                        src={"/assets/rayaru.png"}
-                        width={400}
-                        height={400}
-                        alt={"logo"}
-                        className="object-cover block sm:hidden w-8 h-8 rounded-full"
-                    />
                 </div>
 
                 {/* Nav Links with Dropdown */}
@@ -85,12 +77,7 @@ export function HeaderSection({
                                     name: "Prescribed books",
                                     hash: "prescribedbooks"
                                 },
-                                { name: "Programs", hash: "programs" },
                                 { name: "Admissions", hash: "admissions" },
-                                {
-                                    name: "Academic Calender",
-                                    hash: "academic-calender"
-                                },
                                 { name: "Holiday List", hash: "holiday-list" }
                             ]}
                         />
@@ -102,14 +89,14 @@ export function HeaderSection({
                                 Facilities
                             </Link>
                         </li>
-                        <DropdownItem
-                            title="Activities"
-                            route="/activities"
-                            links={[
-                                { name: "Sports", hash: "activities" },
-                                { name: "Art & Culture", hash: "art" }
-                            ]}
-                        />
+                        <li>
+                            <Link
+                                href="/activities"
+                                onClick={toggleMenu}
+                                className="text-sm sm:text-base text-black hover:text-gray-300 transition-colors font-semibold focus:outline-none">
+                                Activities
+                            </Link>
+                        </li>
                         <li>
                             <Link
                                 href="/gallery"
@@ -126,13 +113,6 @@ export function HeaderSection({
                                 Contact Us
                             </Link>
                         </li>
-                        <Image
-                            src={"/assets/rayaru.png"}
-                            width={400}
-                            height={400}
-                            alt={"logo"}
-                            className="object-cover hidden sm:block sm:w-14 sm:h-14 rounded-full"
-                        />
                     </ul>
                 </nav>
             </header>

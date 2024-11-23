@@ -25,7 +25,7 @@ export function CurriculumOverview() {
           <iframe
             className="w-full h-full rounded-lg"
             src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Sanskaar School - Hubballi - Aerial View"
+            title="Ullas School - Hubballi - Aerial View"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>

@@ -13,7 +13,7 @@ export function ActivitiesGridComponent() {
     {
       icon: Users,
       title: "Assembly",
-      description: "Separate Assembly for Bal Sanskaar"
+      description: "Separate Assembly for Bal Ullas"
     },
     {
       icon: BookOpen,
@@ -46,7 +46,7 @@ export function ActivitiesGridComponent() {
     <div className="min-h-screen bg-purple-50">
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-serif italic text-center mb-12">
-          KG Section - Bal Sanskaar Special Days/Activities
+          KG Section - Bal Ullas Special Days/Activities
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {activities.map((activity, index) => (

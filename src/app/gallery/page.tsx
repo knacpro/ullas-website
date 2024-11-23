@@ -7,54 +7,54 @@ import { useState } from "react";
 
 export default function Component() {
   const galleryImages = [
-    {
-      src: "/ab.svg?height=400&width=800",
-      alt: "School entrance with students and parents"
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Students with Mickey Mouse character"
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Students displaying artwork"
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Bal Sanskaar entrance with balloon decoration"
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Mickey Mouse with students in garden"
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Close up of Mickey Mouse with students"
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Group photo of students and staff"
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Mickey Mouse interacting with students"
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Birthday themed wall art"
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Reading themed wall art"
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Tree themed wall art"
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Playground themed wall art"
-    }
+      {
+          src: "/assets/students.png",
+          alt: "School entrance with students and parents"
+      },
+      {
+          src: "/assets/students-1.png",
+          alt: "Students with Mickey Mouse character"
+      },
+      {
+          src: "/assets/students-2.png",
+          alt: "Students displaying artwork"
+      },
+      {
+          src: "/assets/students-3.png",
+          alt: "Bal Ullas entrance with balloon decoration"
+      },
+      {
+          src: "/assets/students-4.png",
+          alt: "Mickey Mouse with students in garden"
+      },
+      {
+          src: "/assets/students-6.png",
+          alt: "Close up of Mickey Mouse with students"
+      },
+      {
+          src: "/assets/students-7.png",
+          alt: "Group photo of students and staff"
+      },
+      {
+          src: "/assets/students-8.png",
+          alt: "Mickey Mouse interacting with students"
+      },
+      {
+          src: "/assets/girls.png",
+          alt: "Birthday themed wall art"
+      },
+      {
+          src: "/assets/students-9.png",
+          alt: "Reading themed wall art"
+      },
+      {
+          src: "/assets/students-10.png",
+          alt: "Tree themed wall art"
+      },
+      {
+          src: "/assets/students-11.png",
+          alt: "Playground themed wall art"
+      }
   ];
 
   const googleDriveLink = "https://drive.google.com/drive/folders/1vOegbGy4x9MlRsf5EPpX4xugwGiOQL7f";
@@ -66,7 +66,6 @@ export default function Component() {
   };
 
   const handleViewMoreClick = () => {
-    // Redirect to Google Drive link
     window.open(googleDriveLink, "_blank");
   };
 
